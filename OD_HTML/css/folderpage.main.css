@@ -1,0 +1,58 @@
+/*Index CSS*/
+
+
+/*-------BANNER--------*/
+
+.bnnr {
+    height: 90px !important;
+    background-color: cornflowerblue;
+    vertical-align: middle;
+}
+
+
+.bnnrEl1 {
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.bnnrEl2 {
+    margin-top: 50px;
+}
+
+.bnnrEl3 {
+    margin-top: 15px;
+    padding-right: 15px;
+}
+
+.elAchieve {
+    margin-top: 15px;
+    border-radius: 100px;
+    float: left;
+}
+
+.new {
+    margin-top: 15px;
+    border-radius: 100px;
+    float: right;
+}
+
+/*-------FOLDERS-CONTAINER--------*/
+
+.fldCont {
+    margin: auto;
+    overflow-y: hidden;
+    margin-top: 10px;
+}
+
+.midFld {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fldr {
+    display: inline-block;
+    background-color: aqua;
+    height: 130px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
