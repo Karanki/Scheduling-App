@@ -1,0 +1,49 @@
+/*Index CSS*/
+
+
+/*-------BANNER--------*/
+
+.bnnr {
+    height: 90px !important;
+    background-color: cornflowerblue;
+    vertical-align: middle;
+}
+
+.bnnrEl1 {
+    margin-top: 45px;
+    padding-left: 15px;
+}
+
+.bnnrEl2 {
+    margin-top: 50px;
+}
+
+bnnrEl3 {
+    margin-top: 45px;
+    padding-right: 15px;
+}
+
+.elAchieve {
+    float: left;
+}
+
+.elNew {
+    float: right;
+}
+
+/*-------FOLDERS-CONTAINER--------*/
+
+.tskCont {
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+
+.tskEl {
+    height: 70px;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.saveBtn {
+    border-radius: 100%;
+}
