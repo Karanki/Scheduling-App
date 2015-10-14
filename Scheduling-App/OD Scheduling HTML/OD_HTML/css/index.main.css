@@ -1,0 +1,55 @@
+/*Index CSS*/
+
+
+/*-------LOGO--------*/
+
+.bgimg {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 18%;
+    margin-bottom: 7%;
+}
+
+.img-responsive {
+    max-width: 85% !important;
+}
+
+
+/*-------REPLACE_CONTENTS--------*/
+
+#repBtns {
+    display: block;
+    margin-top: 32% !important;
+}
+
+#repLogin {
+    display: block;
+    margin-top: 12% !important; 
+}
+
+#repSignUp {
+    display: block;
+    margin-bottom: 10%;
+}
+
+/*-------BTNS--------*/
+
+.mBtns {
+    width: 85%;
+    height: 45px;
+    margin-bottom: 5%;
+}
+
+.mRepBtn {
+    width: 85%;
+    height: 35px;
+    margin-bottom: 5%;
+}
+
+/*-------INPTS--------*/
+.repInpt {
+    width: 85%;
+    height: 35px;
+    margin-bottom: 4%;
+}
