@@ -10,7 +10,7 @@
 }
 
 .bnnrEl1 {
-    margin-top: 45px;
+    margin-top: 15px;
     padding-left: 15px;
 }
 
@@ -18,16 +18,20 @@
     margin-top: 50px;
 }
 
-bnnrEl3 {
-    margin-top: 45px;
+.bnnrEl3 {
+    margin-top: 15px;
     padding-right: 15px;
 }
 
-.elAchieve {
+.back {
+    margin-top: 15px;
+    border-radius: 100px;
     float: left;
 }
 
-.elNew {
+.new {
+    margin-top: 15px;
+    border-radius: 100px;
     float: right;
 }
 
@@ -35,15 +39,27 @@ bnnrEl3 {
 
 .tskCont {
     overflow-y: scroll;
-    margin-top: 10px;
 }
 
 .tskEl {
     height: 70px;
-    padding: 12px;
+    padding: 20px 15px 12px 15px;
     vertical-align: middle;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+}
+
+.tskInput {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    width: 160px;
 }
 
 .saveBtn {
     border-radius: 100%;
+}
+
+.tmrBtn {
+    border-radius: 100%;
+    float: right;
 }

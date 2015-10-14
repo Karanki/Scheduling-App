@@ -9,8 +9,9 @@
     vertical-align: middle;
 }
 
+
 .bnnrEl1 {
-    margin-top: 45px;
+    margin-top: 15px;
     padding-left: 15px;
 }
 
@@ -18,16 +19,20 @@
     margin-top: 50px;
 }
 
-bnnrEl3 {
-    margin-top: 45px;
+.bnnrEl3 {
+    margin-top: 15px;
     padding-right: 15px;
 }
 
 .elAchieve {
+    margin-top: 15px;
+    border-radius: 100px;
     float: left;
 }
 
-.elNew {
+.new {
+    margin-top: 15px;
+    border-radius: 100px;
     float: right;
 }
 
