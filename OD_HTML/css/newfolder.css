@@ -1,5 +1,8 @@
 /*Index CSS*/
 
+body {
+    background-image: linear-gradient(90deg, rgba(125, 156, 172, .8), rgba(163, 154, 171, 1));
+}
 
 /*-------BANNER--------*/
 
@@ -9,8 +12,8 @@
     left: 0;
     width: 100%;
     height: 90px !important;
-    background-color: cornflowerblue;
-    vertical-align: middle;
+    vertical-align: middle; 
+    background-color: rgba(128, 128, 128, .2);
 }
 
 .bnnrEl1 {
@@ -23,15 +26,32 @@
     text-align: center;
 }
 
+.mHeader {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #e8edec;
+}
+
 .bnnrEl3 {
     margin-top: 15px;
     padding-right: 15px;
 }
 
-.elBack {
-    margin-top: 15px;
+.elBtns {
+    margin: 12.5px 2.5px;
     border-radius: 100px;
-    float: left;
+    width: 45px;
+    height: 45px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
+    border: 2px solid rgba(153, 153, 153, .2);
+}
+
+.elBtns:hover {
+    background-color: #95bcb8;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .5);
+    border: 2px solid rgba(255, 255, 255, .2);
 }
 
 
@@ -47,9 +67,8 @@
 }
 
 .fldrCont1 {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    background: #fff;
+    padding: 15px 20px 10px 20px;
 }
 
 .fldrCont2 {
@@ -70,6 +89,8 @@
 }
 
 .fldrInput {
+    margin: auto;
+    font-size: 1.25em;
     border-right: none !important;
     border-top: none !important;
     border-left: none !important;

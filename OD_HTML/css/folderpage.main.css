@@ -1,5 +1,8 @@
 /*Index CSS*/
 
+body {
+    background-color: #edece6;
+}
 
 /*-------BANNER--------*/
 
@@ -9,8 +12,8 @@
     left: 0;
     width: 100%;
     height: 90px !important;
-    background-color: cornflowerblue;
     vertical-align: middle;
+    background-image: linear-gradient(90deg, #7d9cac, #a39ab5); 
 }
 
 .bnnrEl1 {
@@ -20,6 +23,14 @@
 
 .bnnrEl2 {
     margin-top: 50px;
+    padding: auto;
+}
+
+.mHeader {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #e8edec;
 }
 
 .bnnrEl3 {
@@ -27,10 +38,20 @@
     padding-right: 15px;
 }
 
-.elAchieve {
-    margin-top: 15px;
+.elBtns {
+    margin: 12.5px 2.5px;
     border-radius: 100px;
-    float: left;
+    width: 45px;
+    height: 45px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
+    border: 2px solid rgba(153, 153, 153, .2);
+}
+
+.elBtns:hover {
+    background-color: #95bcb8;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .5);
+    border: 2px solid rgba(255, 255, 255, .2);
 }
 
 .new {
@@ -43,23 +64,34 @@
 
 .fldrBox {
     margin-top: 90px;
+    padding: 2% !important;
 }
 
 .fldCont {
     margin: auto;
     overflow-y: hidden;
-    margin-top: 10px;
 }
 
-.midFld {
+/*.midFld {
     margin-left: 10px;
     margin-right: 10px;
-}
+}*/
 
 .fldr {
     display: inline-block;
-    background-color: aqua;
+    float: left;
+    background-color: #f2f2f2;
     height: 130px;
+    border: 2px solid rgba(153, 153, 153, .2);
     border-radius: 10px;
-    margin-top: 10px;
+    margin: 10px 5px 0 5px;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
+    
+}
+
+.fldr:hover {
+    background-color: #646366;
+    border: 2.5px solid #fff;
+    box-shadow: 0px 0px 7px rgba(128, 128, 128, .5);
+    
 }

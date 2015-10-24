@@ -1,5 +1,6 @@
 /*Index CSS*/
 
+@font-face { font-family: Ubuntu; font-weight: medium; src: url('./fonts/ubuntu/Ubuntu-M.ttf');}
 
 /*-------LOGO--------*/
 
@@ -17,6 +18,10 @@
 
 
 /*-------REPLACE_CONTENTS--------*/
+
+input {
+    text-align: center;
+}
 
 .replaceBtns {
     display: block;
@@ -40,6 +45,8 @@
     width: 85%;
     height: 45px;
     margin-bottom: 5%;
+    font-family: Ubuntu;
+    
 }
 
 .mRepBtn {
