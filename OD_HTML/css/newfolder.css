@@ -1,5 +1,8 @@
 /*Index CSS*/
 
+@font-face { font-family: Ubuntu; font-weight: medium; src: url('../fonts/ubuntu/Ubuntu-M.ttf');}
+@font-face { font-family: Ubuntu; font-weight: bold; src: url('../fonts/ubuntu/Ubuntu-B.ttf');}
+
 body {
     background-image: linear-gradient(90deg, rgba(125, 156, 172, .8), rgba(163, 154, 171, 1));
 }
@@ -31,6 +34,9 @@ body {
     text-align: center;
     margin: auto;
     color: #e8edec;
+    font-family: Ubuntu;
+    font-style:italic;
+    font-size: large;
 }
 
 .bnnrEl3 {
@@ -43,17 +49,14 @@ body {
     border-radius: 100px;
     width: 45px;
     height: 45px;
-    background-color: #f2f2f2;
     box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
-    border: 2px solid rgba(153, 153, 153, .2);
+    border: 2px solid rgba(255, 255, 255, .6);
 }
 
-.elBtns:hover {
-    background-color: #95bcb8;
+/*.elBtns:hover {
     box-shadow: 0px 0px 3px rgba(128, 128, 128, .5);
-    border: 2px solid rgba(255, 255, 255, .2);
-}
-
+    border: 2px solid rgba(255, 255, 255, .9);
+}*/
 
 /*-------FOLDER NAME CONTAINER--------*/
 
@@ -61,98 +64,85 @@ body {
     margin-top: 90px;
 }
 
-.fldrName {
+.fldrText {
     margin-top: 30px;
     margin-bottom: 5px;
+    color: #e8edec;
+    font-family: Ubuntu;
+    font-style:normal;
+    font-size: medium;
 }
 
 .fldrCont1 {
-    background: #fff;
+    background: #e8edec;
     padding: 15px 20px 10px 20px;
 }
 
 .fldrCont2 {
-    padding: 20px;
+    padding: 5px 20px 0 20px;
 }
 
 .fldrCont3 {
-    /*overflow-y: hidden;
-    overflow-x: scroll;*/
+    display: block;
     height: 60px;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.iconScrll {
-    width: 500px;
-}
-
 .fldrInput {
     margin: auto;
-    font-size: 1.25em;
     border-right: none !important;
     border-top: none !important;
     border-left: none !important;
+    border-bottom-color: rgba(106, 145, 145, .5);
+    color: #6a9191;
+    background-color: #e8edec;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-size: 1.2em;
 }
 
-.fldrColor, .fldrLogo, .fldrIcon {
-    margin-top: 20px;
-    margin-bottom: 5px;
+.clrBox {
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 0;
+}
+
+.clrBox:hover {
+    border: 2px solid rgba(232, 237, 236, .5);
+    box-shadow: 0px 0px 4px rgba(200, 200, 200, .9);
 }
 
 .color1 {
     background-color: #99cccc;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 .color2 {
     background-color: #e55ea8;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 .color3 {
     background-color: #ffcc66;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 .color4 {
     background-color: #6699ff;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 .color5 {
     background-color: #e5fefe;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 .fLogo {
-    display: inline-block;
-    float: left;
     background-color: #7d9cac;
-    height: 40px;
-    border-radius: 5px;
-    margin-right: 10px;
 }
 
 .doneBtn {
+    display: block;
     background-color: darkorange;
     width: 85%;
-    height: 35px;
+    height: 45px;
     margin-bottom: 5%;
+    font-family: Ubuntu;
 }

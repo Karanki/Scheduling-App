@@ -1,21 +1,42 @@
 /*Index CSS*/
 
+@font-face { font-family: Ubuntu; font-weight: medium; src: url('../fonts/ubuntu/Ubuntu-M.ttf');}
+@font-face { font-family: Ubuntu; font-weight: bold; src: url('../fonts/ubuntu/Ubuntu-B.ttf');}
+
+body {
+    background-color: #edece6;
+}
 
 /*-------BANNER--------*/
 
 .bnnr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 90px !important;
-    background-color: cornflowerblue;
     vertical-align: middle;
+    background-image: linear-gradient(90deg, #7d9cac, #a39ab5); 
 }
 
 .bnnrEl1 {
     margin-top: 15px;
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 .bnnrEl2 {
     margin-top: 50px;
+    padding: auto;
+}
+
+.mHeader {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #e8edec;
+    font-family: Ubuntu;
+    font-style:italic;
+    font-size: large;
 }
 
 .bnnrEl3 {
@@ -23,22 +44,35 @@
     padding-right: 15px;
 }
 
-.back {
-    margin-top: 15px;
+.elBtns {
+    margin: 12.5px 2.5px;
     border-radius: 100px;
-    float: left;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
+    border: 2px solid rgba(255, 255, 255, .6);
 }
 
+/*.elBtns:hover {
+    background-color: #95bcb8;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .5);
+    border: 2px solid rgba(255, 255, 255, .2);
+}*/
+
 .new {
-    margin-top: 15px;
-    border-radius: 100px;
     float: right;
 }
 
-/*-------FOLDERS-CONTAINER--------*/
+/*-------TASKS-CONTAINER--------*/
 
-.tskCont {
-    overflow-y: scroll;
+.fldrBox {
+    margin-top: 90px;
+    padding: 2% !important;
+}
+
+.fldCont {
+    margin: auto;
+    overflow-y: hidden;
 }
 
 .tskEl {
@@ -46,20 +80,79 @@
     padding: 20px 15px 12px 15px;
     vertical-align: middle;
     border-bottom: 2px solid rgba(0,0,0,.1);
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .tskInput {
-    border-right: none;
-    border-top: none;
-    border-left: none;
-    width: 160px;
+    margin: auto;
+    border-right: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom-color: rgba(106, 145, 145, .5);
+    color: #6a9191;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: Ubuntu;
+    font-style: normal;
+    font-size: 1.2em;
 }
+
 
 .saveBtn {
     border-radius: 100%;
+    width: 26px;
+    height: 26px;
+    background-color: #85b59f;
+}
+
+.saveBtn:hover {
+    background-color: #67b795;
 }
 
 .tmrBtn {
     border-radius: 100%;
-    float: right;
+    width: 26px;
+    height: 26px;
+    margin-left: 10%;
+    background-color: #ffb135;
 }
+
+.tmrBtn:hover {
+    background-color: #ffb135;
+}
+
+
+.tskOpt {
+    height: 70px;
+    padding: 15px 15px 12px 15px;
+    vertical-align: middle;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    background-color: rgba(255, 255, 255, .35);
+}
+
+.firebox{
+    padding: 0;
+}
+
+.setBtn {
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    margin-left: 3%;
+    background-color: #ffb135;
+}
+
+.dueDiv {
+    /*word-wrap: break-word;*/
+    display: block;
+    width: 76px;
+    float: right;
+    text-align: center;
+}
+
+.dueDes {
+    width: auto;
+    font-family: Ubuntu;
+    font-size: x-small;
+    color: #95bcb8;
+}
+

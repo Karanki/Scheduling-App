@@ -12,45 +12,58 @@
     <meta name="description" content="An interactive getting started guide for Brackets.">
 </head>
     
-<body id="bgMain" class="container-fluid">
+<body id="bgMain">
     
-    <div id="hBanner" class="row bnnr">
-        <div id="" class="col-xs-4 bnnrEl1">
-            <button id="backBtn" class="btn btn-default btn-sm back">
+    <div id="hBanner" class="bnnr">
+        <div id="" class="col-xs-3 bnnrEl3">
+            <div id="tDaBtn" class="btn btn-default elBtns">
                 <img src="" class=""/>
-            </button>
+            </div>
         </div>
-        
-        <div id="tDtittle" class="col-xs-4 bnnrEl2">
-            <span><strong>To-Do-List</strong></span>
+
+        <div id="tDtittle" class="col-xs-6 bnnrEl2">
+            <span class="mHeader"><strong>Task Page</strong></span>
         </div>
-        
-        <div id="" class="col-xs-4 bnnrEl3">
-            <button id="tsknew" class="btn btn-default btn-sm new">
+
+        <div class="col-xs-3 bnnrEl3">
+            <div id="fdlnew" class="btn btn-default elBtns new">
                 <img src="" class=""/>
-            </button>
+            </div>
         </div>
     </div>
     
-    <div id="taskCont" class="row tskCont">
+    <div class="container-fluid fldrBox"> 
         <div id="tsk#" class="col-xs-12 tskEl">
             <input id="*ID#" class="tskInput" type="text" name="*TaskName" placeholder="Enter Task Name">
             
-            <button id="saveTskName" class="saveBtn btn btn-default btn-sm" type="button">
+            <div id="saveTskName" class="saveBtn btn btn-default saveBtn" type="button">
                 <img src="" class=""/>
-            </button>
+            </div>
             
-            <button id="tskTimer" class="tmrBtn btn btn-default btn-sm" type="button">
+            <div id="tskTimer" class="tmrBtn btn btn-default" type="button">
                 <img src="" class=""/>
-            </button>
-    </div>
+            </div>
+        </div>
+        <div id="tsk#option" class="col-xs-12 tskOpt">
+            <img id="" class="col-xs-2 firebox" src=""> 
+            
+            <div id="tskStart" class="setBtn btn btn-default" type="button">
+                <img src="" class=""/>
+            </div>
+            
+            <div id="tskStop" class="setBtn btn btn-default" type="button">
+                <img src="" class=""/>
+            </div>
+            
+            <div id="tskReset" class="setBtn btn btn-default" type="button">
+                <img src="" class=""/>
+            </div>
+            <div class="dueDiv">
+                <p id="" class="dueDes">December 15, 2015 <br>5:40pm</p>
+            </div>
+        </div>
  
     </div>
-
-
-        <h5>You have not Created a Task</h5>
-
-
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
