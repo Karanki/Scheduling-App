@@ -1,5 +1,14 @@
-/*Index CSS*/
+*Index CSS*/
 
+@font-face { font-family: Ubuntu; font-weight: medium; src: url('../fonts/ubuntu/Ubuntu-M.ttf');}
+@font-face { font-family: Ubuntu; font-weight: bold; src: url('../fonts/ubuntu/Ubuntu-B.ttf');}
+
+body {
+    font-family: Ubuntu;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(85deg, rgba(232, 237, 236, .8), rgba(237, 236, 230, 1));
+}
 
 /*-------BANNER--------*/
 
@@ -8,31 +17,83 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px !important;
-    background-color: cornflowerblue;
-    vertical-align: middle;
+    height: 90px;
+    vertical-align: middle; 
+    background-image: linear-gradient(90deg, #7d9cac, #a39ab5);
 }
 
 .bnnrEl1 {
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 45px;
+    padding-left: 15px;
 }
 
 .bnnrEl2 {
     margin-top: 50px;
+    text-align: center;
 }
 
+.mHeader {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #e8edec;
+    font-family: Ubuntu;
+    font-style:normal;
+    font-size: large;
+}
+
+.bnnrEl3 {
+    margin-top: 15px;
+    padding-right: 15px;
+}
+
+.elBtns {
+    margin: 12.5px 2.5px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
+    border: 2px solid rgba(255, 255, 255, .6);
+}
 
 /*-------TIMER-CONTAINER--------*/
 
 
-.timerBox {
+.contentBox {
+    width: 100%;
+    height: 100%;
     margin-top: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.catCont {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.twrly {
+    float: right;
+    margin: 2.5px;
+}
+
+.iFramStyle {
+    width: 100%;
+    border: 2px solid rgba(100, 100, 100, .3);
+}
+
+.btnCont {
+    position: fixed;
+    width: 85%;
+    height: 45px;
+    bottom: 17px;
+    left: 8px;
+    width: 95%;
 }
 
 .mBtns {
-    width: 85%;
+    width: 90%;
     height: 45px;
-    margin-bottom: 5%;
 }
-

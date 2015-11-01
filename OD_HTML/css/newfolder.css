@@ -4,7 +4,10 @@
 @font-face { font-family: Ubuntu; font-weight: bold; src: url('../fonts/ubuntu/Ubuntu-B.ttf');}
 
 body {
-    background-image: linear-gradient(90deg, rgba(125, 156, 172, .8), rgba(163, 154, 171, 1));
+    font-family: Ubuntu;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(125, 156, 172, .5), rgba(163, 154, 171, .5));
 }
 
 /*-------BANNER--------*/
@@ -14,9 +17,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px !important;
+    height: 90px;
     vertical-align: middle; 
-    background-color: rgba(128, 128, 128, .2);
+    background-image: linear-gradient(90deg, #7d9cac, #a39ab5);
 }
 
 .bnnrEl1 {
@@ -35,7 +38,7 @@ body {
     margin: auto;
     color: #e8edec;
     font-family: Ubuntu;
-    font-style:italic;
+    font-style:normal;
     font-size: large;
 }
 
@@ -60,8 +63,12 @@ body {
 
 /*-------FOLDER NAME CONTAINER--------*/
 
-.fldrBox {
+.contentBox {
+    width: 100%;
+    height: 100%;
     margin-top: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .fldrText {
@@ -84,8 +91,8 @@ body {
 
 .fldrCont3 {
     display: block;
-    height: 60px;
-    padding-left: 20px;
+    height: 65px;
+    padding: 2px 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -104,14 +111,17 @@ body {
 }
 
 .clrBox {
-    height: 40px;
+    width: 45px;
+    height: 60px;
     border-radius: 5px;
-    margin: 5px 10px 5px 0;
+    margin-right: 10px;
 }
 
 .clrBox:hover {
-    border: 2px solid rgba(232, 237, 236, .5);
-    box-shadow: 0px 0px 4px rgba(200, 200, 200, .9);
+    width: 43px;
+    height: 58px;
+    border: 2px solid rgba(120, 120, 120, .5);
+    box-shadow: 0px 0px 4px rgba(232, 237, 236, .9);
 }
 
 .color1 {
@@ -138,11 +148,16 @@ body {
     background-color: #7d9cac;
 }
 
-.doneBtn {
-    display: block;
-    background-color: darkorange;
+.btnCont {
+    position: fixed;
     width: 85%;
     height: 45px;
-    margin-bottom: 5%;
-    font-family: Ubuntu;
+    bottom: 17px;
+    left: 8px;
+    width: 95%;
+}
+
+.mBtns {
+    width: 90%;
+    height: 45px;
 }

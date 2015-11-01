@@ -4,6 +4,9 @@
 @font-face { font-family: Ubuntu; font-weight: bold; src: url('../fonts/ubuntu/Ubuntu-B.ttf');}
 
 body {
+    font-family: Ubuntu;
+    width: 100vw;
+    height: 100vh;
     background-color: #edece6;
 }
 
@@ -34,8 +37,7 @@ body {
     text-align: center;
     margin: auto;
     color: #e8edec;
-    font-family: Ubuntu;
-    font-style:italic;
+    font-style:normal;
     font-size: large;
 }
 
@@ -91,7 +93,7 @@ body {
     border-bottom-color: rgba(106, 145, 145, .5);
     color: #6a9191;
     background-color: rgba(255, 255, 255, 0);
-    font-family: Ubuntu;
+
     font-style: normal;
     font-size: 1.2em;
 }
@@ -151,7 +153,6 @@ body {
 
 .dueDes {
     width: auto;
-    font-family: Ubuntu;
     font-size: x-small;
     color: #95bcb8;
 }

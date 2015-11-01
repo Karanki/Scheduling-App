@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OD NEW FOLDER</title>
+    <title>OD Timer Page</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/timerpage.main.css" rel="stylesheet">
@@ -16,45 +16,46 @@
     
     <div id="hBanner" class="bnnr">
         <div id="" class="col-xs-3 bnnrEl3">
-            <button id="tDaBtn" class="btn btn-default btn-sm elBack">
+            <div id="tDaBtn" class="btn btn-default elBtns">
                 
-            </button>
+            </div>
         </div>
 
-        <div id="tDtittle" class="col-xs-5 bnnrEl2">
-            <span><strong>Timer Page</strong></span>
+        <div id="tDtittle" class="col-xs-6 bnnrEl2">
+            <span class="mHeader"><strong>Folder Name</strong></span>
         </div>
     </div>
     
-    <div class="container-fluid timerBox">
-        <div id="strtDate" class="row col-xs-12">
+    <div class="contentBox">
+        <div id="strtDate" class="row col-xs-12 catCont">
             <span>TASK START DATE</span>
-            <button id="twirl1" class="btn btn-default btn-sm">
+            <div id="twirl1" class="btn btn-default btn-sm twrly">
                 <img src="" class=""/>
-            </button>
+            </div>
         </div>
-        <div id="strtCalCon" class="row col-xs-12">
-            <iframe id="strtCal"></iframe>
+        <div id="strtCalCon" class="row col-xs-12 center-block">
+            <iframe id="strtCal" class="center-block iFramStyle"></iframe>
         </div>
         
-        <div id="endDate" class="row col-xs-12">
+        <div id="endDate" class="row col-xs-12 catCont">
             <span>TASK END DATE</span>
-            <button id="twirl2" class="btn btn-default btn-sm">
+            <div id="twirl2" class="btn btn-default btn-sm twrly">
                 <img src="" class=""/>
-            </button>
+            </div>
         </div>
-        <div id="endCalCon" class="row col-xs-12">
-            <iframe id="endCal"></iframe>
+        <div id="endCalCon" class="row col-xs-12 center-block">
+            <iframe id="endCal" class="center-block iFramStyle"></iframe>
         </div>
         
-        <div id="endTime" class="row col-xs-12">
+        <div id="endTime" class="row col-xs-12 catCont">
             <span>TASK END TIME</span>
-            <button id="twirl3" class="btn btn-default btn-sm">
+            <div id="twirl3" class="btn btn-default btn-sm twrly">
                 <img src="" class=""/>
-            </button>
+            </div>
         </div>
-        
-        <button id="timerDone" class="btn btn-default center-block mBtns">DONE</button>
+        <div class="btnCont center-block">
+            <button id="timerDone" class="btn btn-primary center-block btnCont">DONE</button>
+        </div>
             
     </div>
     
