@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.main.css" rel="stylesheet">
+    <script src="js/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
     <meta name="description" content="An interactive getting started guide for Brackets.">
 </head>
@@ -19,13 +20,44 @@
     </div>
     
     <div class="row col-xs-12 center-block">
-        <div class="replaceBtns">
-            <button id="loginOD" class="btn btn-primary center-block mBtns" type="button">LOGIN</a>
+        <div id="dMain" class="replaceBtns">
+            <button id="loginOD" class="btn btn-primary center-block mBtns" type="button" onclick="hideSignup()">LOGIN</a>
             
-            <button id="signupOD" class="btn btn-success center-block mBtns" type="button">SIGN UP</a>
+            <button id="signupOD" class="btn btn-success center-block mBtns" type="button" onclick="hideLogin()" >SIGN UP</a>
         </div>
     </div>
 
+    <div id="dLogin" class="row col-xs-12 center-block" style="visibility: hidden; display:none;">
+        <div id="replaceLogin" class="replaceLogin">
+            <input id="emaiId" class="center-block repInpt" type="text" name="email" value="email address">
+
+
+            <input id="passId" class="center-block repInpt" type="text" name="password" value="password">
+
+
+            <button id="loginMain" class="btn btn-primary center-block mRepBtn" type="button">LOGIN</button>
+            <hr>
+            
+            <button id="loginGAPI" class="btn btn-primary center-block mRepBtn" type="button"><small>LOGIN WITH GOOGLE</small></button>
+        </div>
+
+    </div>
+    
+    
+    <div id="dSignup" class="row col-xs-12 center-block" style="visibility: hidden; display:none;">
+        <div class="replaceSignUp">
+            <input id="usrNId" class="center-block repInpt" type="text" name="userName" value="user name">
+
+            <input id="emailId" class="center-block repInpt" type="text" name="email addres" value="email address">
+            
+            <input id="passId" class="center-block repInpt" type="text" name="password" value="password">
+            
+            <input id="passIdConf" class="center-block repInpt" type="text" name="comfirmPass" value="confirm password">       
+        </div>
+        <button id="signupMain" class="btn btn-primary center-block mRepBtn" type="button">SIGN UP</button> 
+    </div>
+
+    
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
