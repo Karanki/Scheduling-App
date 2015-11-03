@@ -57,19 +57,20 @@ body {
 
 /*-------ACHIEVEMENT-CONTAINER--------*/
 
-.achieveCont {
-    overflow-y: scroll;
+.fldrBox {
+    margin-top: 90px;
+    padding: 2% !important;
 }
 
 .tskEl {
     height: 70px;
-    padding: 20px 15px 12px 15px;
+    padding: 5px 15px 12px 15px;
     vertical-align: middle;
     border-bottom: 2px solid rgba(0,0,0,.1);
     font-size: 9px !important;
 }
 
 .achText {
-    font-size: 12px !important;
+    font-size: 14px !important;
 }
 
