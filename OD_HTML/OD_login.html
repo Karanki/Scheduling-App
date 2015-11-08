@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.main.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
     <meta name="description" content="An interactive getting started guide for Brackets.">
 </head>
@@ -17,23 +18,28 @@
         <img class="img-responsive center-block" src="images/ODlogo.png" alt="Logo" width="150px" height="150px">
     </div>
     
-    
+    <form id="loginForm">
     <div id="dMain" class="row col-xs-12 center-block">
+        
         <div class="replaceLogin">
-            <input id="emaiId" class="center-block repInpt" type="text" name="email" placeholder="email address">
+            <p id="errorMsg"></p>
+            <input id="emaiId" class="center-block repInpt" type="text" name="login" placeholder="email address">
 
 
-            <input id="passId" class="center-block repInpt" type="text" name="password" placeholder="password">
+            <input id="passId" class="center-block repInpt" type="password" name="password" placeholder="password">
 
 
             <button id="loginMain" class="btn btn-primary center-block mRepBtn" type="button">LOGIN</button>
             <hr>
             
             <button id="loginGAPI" class="btn btn-success center-block mRepBtn" type="button"><small>LOGIN WITH GOOGLE</small></button>
-            
+        </form>    
+        
         </div>
 
     </div>
+    
+    <script src="js/login.js"></script>
     
 </body>
 </html>
