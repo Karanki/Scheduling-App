@@ -1,0 +1,107 @@
+/*Index CSS*/
+
+@font-face { font-family: Ubuntu; font-weight: medium; src: url('../fonts/ubuntu/Ubuntu-M.ttf');}
+@font-face { font-family: Ubuntu; font-weight: bold; src: url('../fonts/ubuntu/Ubuntu-B.ttf');}
+
+body {
+    background-color: #edece6;
+}
+
+/*-------BANNER--------*/
+
+.bnnr {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px !important;
+    vertical-align: middle;
+    background-image: linear-gradient(90deg, #7d9cac, #a39ab5); 
+}
+
+/*-------BANNER BUTTONS--------*/
+
+.bnnrEl {
+    margin-top: 15px;
+    padding-right: 15px;
+}
+
+.bnnrTitle {
+    margin-top: 50px;
+    padding: auto;
+    text-align: center;
+}
+
+.mHeader {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #e8edec;
+    font-family: Ubuntu;
+    font-style:normal;
+    font-size: large;
+}
+
+.elBtns {
+    padding: 0px !important;
+    margin: 12.5px 2.5px;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .05);
+    border: 2px solid rgba(255, 255, 255, .6);
+}
+
+.newBtn {
+    float: right;
+}
+
+.lrgB {
+    display: inherit;
+    height: 80%;
+    width: 80%;  
+    margin: 10%;
+}
+
+.medB {
+    display: inherit;
+    height:90%;
+    width: 90%;  
+    margin: 2.5%;
+}
+
+.smlB {
+    display: inherit;
+    height:90%;
+    width: 90%;  
+    margin: 5%;
+}
+
+.saveBtn {
+    padding: 0px !important;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, .6);
+    border: 2px solid rgba(133, 181, 159, .85);
+    border-radius: 100%;
+    width: 26px;
+    height: 26px;
+}
+
+/*-------CONTENT-CONTAINER--------*/
+
+.mainBox {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100vw;;
+    height: 85vh;
+    top: 90px;
+    left: 1px;
+    padding: 2% !important;
+    overflow: auto;
+}
+
+.mainCont {
+    margin: auto;
+    overflow-y: hidden;
+}
