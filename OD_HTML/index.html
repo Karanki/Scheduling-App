@@ -8,7 +8,8 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.main.css" rel="stylesheet">
-    <script src="js/index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
     <meta name="description" content="An interactive getting started guide for Brackets.">
 </head>
@@ -27,34 +28,43 @@
         </div>
     </div>
 
+    <form id="loginForm">
     <div id="dLogin" class="row col-xs-12 center-block" style="visibility: hidden; display:none;">
         <div id="replaceLogin" class="replaceLogin">
-            <input id="emaiId" class="center-block repInpt" type="text" name="email" placeholder="email address">
+            <p id="errorMsg"></p>
+            <input id="emaiId" class="center-block repInpt" type="text" name="login" placeholder="email address">
 
 
-            <input id="passId" class="center-block repInpt" type="text" name="password" placeholder="password">
+            <input id="passId" class="center-block repInpt" type="password" name="password" placeholder="password">
 
 
             <button id="loginMain" class="btn btn-primary center-block mRepBtn" type="button">LOGIN</button>
             <hr>
             
-            <button id="loginGAPI" class="btn btn-primary center-block mRepBtn" type="button"><small>LOGIN WITH GOOGLE</small></button>
+            <button id="loginGAPI" class="btn btn-success center-block mRepBtn" type="button"><small>LOGIN WITH GOOGLE</small></button>
         </div>
 
     </div>
-    
+    </form>
     
     <div id="dSignup" class="row col-xs-12 center-block" style="visibility: hidden; display:none;">
         <div class="replaceSignUp">
-            <input id="usrNId" class="center-block repInpt" type="text" name="userName" placeholder="user name">
-
-            <input id="emailId" class="center-block repInpt" type="text" name="email addres" placeholder="email address">
+            <form id="myForm" method="post" action="php/signup.php">
+            <input type="hidden" name="submitted" value="true"/>
             
-            <input id="passId" class="center-block repInpt" type="text" name="password" placeholder="password">
+            <fieldset>
+            <input id="emailId" class="center-block repInpt" type="text" name="email" placeholder="email address">
             
-            <input id="passIdConf" class="center-block repInpt" type="text" name="comfirmPass" placeholder="confirm password">       
+            <input id="passId" class="center-block repInpt" type="password" name="supassword" placeholder="password">
+            
+            <input id="passIdConf" class="center-block repInpt" type="password" name="comfirmPass" placeholder="confirm password">    
+            </fieldset>
         </div>
         <button id="signupMain" class="btn btn-primary center-block mRepBtn" type="button">SIGN UP</button> 
+        <span id="pwdWarning"  class="center-block repInpt"></span>    
+        </form>
+        
+        <span id="result"></span>
     </div>
 
     
@@ -63,5 +73,10 @@
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 </html>
+
