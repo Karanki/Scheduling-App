@@ -7,6 +7,7 @@
     <title>OD TASK PAGE</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/universal.css" rel="stylesheet">
     <link href="css/taskpage.main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
     <meta name="description" content="An interactive getting started guide for Brackets.">
@@ -15,54 +16,55 @@
 <body id="bgMain">
     
     <div id="hBanner" class="bnnr">
-        <div id="" class="col-xs-3 bnnrEl3">
+        <div id="" class="col-xs-3 bnnrEl">
             <div id="tDaBtn" class="btn btn-default elBtns">
-                <img src="" class=""/>
+                <img src="./images/Button_BACK_45X45.png" class="lrgB" height="40" width="40"/>
             </div>
         </div>
 
-        <div id="tDtittle" class="col-xs-6 bnnrEl2">
+        <div id="tDtittle" class="col-xs-6 bnnrTitle">
             <span class="mHeader"><strong>Task Page</strong></span>
         </div>
 
-        <div class="col-xs-3 bnnrEl3">
-            <div id="fdlnew" class="btn btn-default elBtns new">
-                <img src="" class=""/>
+        <div class="col-xs-3 bnnrEl">
+            <div id="fdlnew" class="btn btn-default elBtns newBtn">
+                <img src="./images/Button_ADD_45x45.png" class="lrgB" height="40" width="40"/>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid fldrBox"> 
-        <div id="tsk#" class="col-xs-12 tskEl">
-            <input id="*ID#" class="tskInput" type="text" name="*TaskName" placeholder="Enter Task Name">
-            
-            <div id="saveTskName" class="saveBtn btn btn-default saveBtn" type="button">
-                <img src="" class=""/>
+    <div class="container-fluid mainBox"> 
+        <div id="" class="row mainCont">
+            <div id="tsk#" class="col-xs-12 tskEl">
+                <input id="*ID#" class="tskInput" type="text" name="TaskName" placeholder="Enter Task Name">
+
+                <div id="saveTskName" class="btn btn-default saveBtn" type="button">
+                    <img src="./images/Button_CHECK_45x45_green.png" class="smlB"/>
+                </div>
+
+                <div id="tskTimer" class="btn btn-default tmrBtn" type="button">
+                    <img src="./images/Button_TIMER_45x45_orange.png" class="smlB"/>
+                </div>
             </div>
-            
-            <div id="tskTimer" class="tmrBtn btn btn-default" type="button">
-                <img src="" class=""/>
+            <div id="tsk#option" class="col-xs-12 tskOpt">
+                <img id="" class="col-xs-2 firebox" src=""> 
+
+                <div id="tskStart" class="btn btn-default setBtn" type="button">
+                    <img src="./images/Button_PLAY_45x45_blue.png" class="medB"/>
+                </div>
+
+                <div id="tskPause" class="btn btn-default setBtn" type="button">
+                    <img src="./images/Button_PAUSE_45x45.png" class="medB"/>
+                </div>
+
+                <div id="tskReset" class="btn btn-default setBtn" type="button">
+                    <img src="./images/Button_RESET_45x45.png" class="medB"/>
+                </div>
+                <div class="dueDiv">
+                    <p id="" class="dueDes">December 15, 2015 <br>5:40pm</p>
+                </div>
             </div>
         </div>
-        <div id="tsk#option" class="col-xs-12 tskOpt">
-            <img id="" class="col-xs-2 firebox" src=""> 
-            
-            <div id="tskStart" class="setBtn btn btn-default" type="button">
-                <img src="" class=""/>
-            </div>
-            
-            <div id="tskStop" class="setBtn btn btn-default" type="button">
-                <img src="" class=""/>
-            </div>
-            
-            <div id="tskReset" class="setBtn btn btn-default" type="button">
-                <img src="" class=""/>
-            </div>
-            <div class="dueDiv">
-                <p id="" class="dueDes">December 15, 2015 <br>5:40pm</p>
-            </div>
-        </div>
- 
     </div>
     
     <!-- Bootstrap core JavaScript

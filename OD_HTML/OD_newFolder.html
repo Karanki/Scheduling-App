@@ -7,6 +7,7 @@
     <title>OD NEW FOLDER</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/universal.css" rel="stylesheet">    
     <link href="css/newfolder.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
     <meta name="description" content="An interactive getting started guide for Brackets.">
@@ -15,65 +16,74 @@
 <body id="bgMain">
     
     <div id="hBanner" class="bnnr">
-        <div id="" class="col-xs-3 bnnrEl3">
+        <div id="" class="col-xs-3 bnnrEl">
             <div id="tDaBtn" class="btn btn-default elBtns">
-                
+                <img src="./images/Button_BACK_45X45.png" class="lrgB" height="40" width="40"/>
             </div>
         </div>
 
-        <div id="tDtittle" class="col-xs-6 bnnrEl2">
+        <div id="tDtittle" class="col-xs-6 bnnrTitle">
             <span class="mHeader"><strong>Folder Name</strong></span>
         </div>
     </div>
     
-    <div class="contentBox">
-        <div id="fNameOpt" class="row">
-            <span class="col-xs-12 fldrText"><strong>FOLDER NAME:</strong></span>
+    <div class="container-fluid mainBox">
+        <div id="timerContent" class="row mainCont">
+            
+            <div id="" class="section">
+                <span class="fldrTitle"><strong>FOLDER NAME:</strong></span>
 
-            <div id="inputBox" class="col-xs-12 fldrCont1"><input id="fldrId" class="fldrInput" type="text" name="FolderName" placeholder="Enter Folder Name">
+                <div id="inputBox" class="col-xs-10">
+                    <input id="fldrId" class="fldrInput" type="text" name="FolderName" placeholder="Enter Folder Name">
+                </div>
+                
+                <div id="saveFldName" class="btn btn-default saveBtn" type="button">
+                    <img src="./images/Button_CHECK_45x45_green.png" class="smlB"/>
+                </div>
+            
             </div>
+                
+            <div id="" class="section">
+                <span class="fldrTitle"><strong>FOLDER COLOR:</strong></span>
 
-            <span class="col-xs-12 fldrText"><strong>FOLDER COLOR:</strong></span>
+                <div id="colorBox" class="cont">
+                    <div id="" class="color1 clrBox">
+                    </div>
 
-            <div id="colorBox" class="col-xs-12 fldrCont2">
-                <div id="" class="col-xs-1 color1 clrBox">
-                </div>
+                    <div id="" class="color2 clrBox">
+                    </div>
 
-                <div id="" class="col-xs-1 color2 clrBox">
-                </div>
+                    <div id="" class="color3 clrBox">
+                    </div>
 
-                <div id="" class="col-xs-1 color3 clrBox">
-                </div>
+                    <div id="" class="color4 clrBox">
+                    </div>
 
-                <div id="" class="col-xs-1 color4 clrBox">
-                </div>
-
-                <div id="" class="col-xs-1 color5 clrBox">
-                </div>            
-            </div>
-
-            <span class="col-xs-12 fldrText"><strong>FOLDER LOGO:</strong></span>
-
-            <div id="iconBox" class="col-xs-12 fldrCont3">
-                <div id="" class="col-xs-1 clrBox fLogo">
-                </div>
-
-                <div id="" class="col-xs-1 clrBox fLogo">
-                </div>
-
-                <div id="" class="col-xs-1 clrBox fLogo">
-                </div>
-
-                <div id="" class="col-xs-1 clrBox fLogo">
-                </div>
-
-                <div id="" class="col-xs-1 clrBox fLogo">
+                    <div id="" class="color5 clrBox">
+                    </div>            
                 </div>
             </div>
             
-            <div class="btnCont center-block">
-                <button id="doneFname" class="btn btn-primary center-block mBtns" type="button">DONE</button>
+            <div id="" class="section">
+                <span class="fldrTitle"><strong>FOLDER LOGO:</strong></span>
+
+                <div id="iconCont" class="cont1">
+                    <div id="" class="iconBox">
+                    </div>
+
+                    <div id="" class="iconBox">
+                    </div>
+
+                    <div id="" class="iconBox">
+                    </div>
+
+                    <div id="" class="iconBox">
+                    </div>               
+                </div>
             </div>
+        </div>
+        <div class="center-block btnCont">
+            <button id="doneFname" class="btn btn-primary center-block mBtns" type="button">DONE</button>
         </div>
     </div>
     

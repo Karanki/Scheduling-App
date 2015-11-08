@@ -7,6 +7,7 @@
     <title>OD Timer Page</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/universal.css" rel="stylesheet">
     <link href="css/timerpage.main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
     <meta name="description" content="An interactive getting started guide for Brackets.">
@@ -15,50 +16,50 @@
 <body id="bgMain">
     
     <div id="hBanner" class="bnnr">
-        <div id="" class="col-xs-3 bnnrEl3">
+        <div id="" class="col-xs-3 bnnrEl">
             <div id="tDaBtn" class="btn btn-default elBtns">
-                
+                <img src="./images/Button_BACK_45X45.png" class="lrgB" height="40" width="40"/>
             </div>
         </div>
 
-        <div id="tDtittle" class="col-xs-6 bnnrEl2">
+        <div id="tDtittle" class="col-xs-6 bnnrTitle">
             <span class="mHeader"><strong>Folder Name</strong></span>
         </div>
     </div>
     
-    <div class="contentBox">
-        <div id="strtDate" class="row col-xs-12 catCont">
-            <span>TASK START DATE</span>
-            <div id="twirl1" class="btn btn-default btn-sm twrly">
-                <img src="" class=""/>
+    <div class="container-fluid mainBox">
+        <div id="timerContent" class="row mainCont">
+            <div id="strtDate" class="row col-xs-12 catCont">
+                <span>TASK START DATE</span>
+                <div id="twirl1" class="btn btn-default twrly">
+                    <img src="./images/Button_TWIRL_45x45.png" class="smlB" height="10" width="30"/>
+                </div>
             </div>
-        </div>
-        <div id="strtCalCon" class="row col-xs-12 center-block">
-            <iframe id="strtCal" class="center-block iFramStyle"></iframe>
-        </div>
-        
-        <div id="endDate" class="row col-xs-12 catCont">
-            <span>TASK END DATE</span>
-            <div id="twirl2" class="btn btn-default btn-sm twrly">
-                <img src="" class=""/>
+            <div id="strtCalCon" class="row col-xs-12 center-block">
+                <iframe id="strtCal" class="center-block iFramStyle"></iframe>
             </div>
-        </div>
-        <div id="endCalCon" class="row col-xs-12 center-block">
-            <iframe id="endCal" class="center-block iFramStyle"></iframe>
-        </div>
-        
-        <div id="endTime" class="row col-xs-12 catCont">
-            <span>TASK END TIME</span>
-            <div id="twirl3" class="btn btn-default btn-sm twrly">
-                <img src="" class=""/>
+
+            <div id="endDate" class="row col-xs-12 catCont">
+                <span>TASK END DATE</span>
+                <div id="twirl2" class="btn btn-default twrly">
+                    <img src="./images/Button_TWIRL_45x45.png" class="smlB" height="10" width="30"/>
+                </div>
             </div>
-        </div>
-        <div class="btnCont center-block">
-            <button id="timerDone" class="btn btn-primary center-block btnCont">DONE</button>
-        </div>
-            
+            <div id="endCalCon" class="row col-xs-12 center-block">
+                <iframe id="endCal" class="center-block iFramStyle"></iframe>
+            </div>
+
+            <div id="endTime" class="row col-xs-12 catCont">
+                <span>TASK END TIME</span>
+                <div id="twirl3" class=" btn btn-default twrly">
+                    <img src="./images/Button_TWIRL_45x45.png" class="smlB" height="10" width="30"/>
+                </div>
+            </div>
+            <div class="btnCont center-block">
+                <button id="timerDone" class="btn btn-primary center-block btnCont">DONE</button>
+            </div>
+        </div>    
     </div>
-    
     
     
     <!-- Bootstrap core JavaScript
