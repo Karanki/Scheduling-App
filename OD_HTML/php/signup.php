@@ -8,7 +8,7 @@ $con = mysqli_connect("localhost", "root", "root", "scheduleapp");
 error_reporting(E_ALL && ~E_NOTICE);
 
 $email=$_POST['email'];
-$password=$_POST['password'];
+$password=$_POST['supassword'];
     
 $sql="INSERT INTO user(email, password) VALUES ('$email', '$password')";
 $result=mysqli_query($con, $sql);
