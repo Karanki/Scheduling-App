@@ -22,7 +22,7 @@ if (isset($_POST['email']) && isset($_POST['supassword'])){
          echo "<script type='text/javascript'>alert('Password does not match');</script>";
         
     }
-        elseif($password < 5){
+        elseif(strlen($password) < 5){
          echo "<script type='text/javascript'>alert('Password is too short');</script>";
     }
     else{
