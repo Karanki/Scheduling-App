@@ -9,12 +9,13 @@ if (isset($_POST['email']) && isset($_POST['supassword'])){
     $password = $_POST['supassword'];
     $cpassword = $_POST['confirmPass'];
     $passShort = 5;
-    $slquery = "SELECT * FROM user WHERE email = '$email'";
+    $slquery = mysqli_query($con, "SELECT * FROM user WHERE email='".$email."'");
+//    $slquery = "SELECT * FROM user WHERE email = '$email'";
     $selectresult = mysqli_query($slquery);
     //
     if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     echo "<script type='text/javascript'>alert('Invalid email');</script>";
-    } elseif (mysqli_num_rows($selectresult)>0) {
+    } elseif (mysqli_num_rows($slquery)>0) {
     echo "<script type='text/javascript'>alert('Email already exists');</script>";
     }
     //
@@ -99,7 +100,6 @@ if($result){
 
 
 ?>
-
 
 
 
