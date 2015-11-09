@@ -2,8 +2,10 @@
 $("#signupMain").click( function() {
  $.post( $("#myForm").attr("action"),
          $("#myForm :input").serializeArray(),
-         function(info){ $("#result").html(info);
-   });
+         function(info){ $("#errorMsg").html(info);
+        $("#errorMsg").css({"text-align": "center", "margin-top": "-11.5%", 'color': 'white'});
+   }
+       );
 clearInput();
 });
  
