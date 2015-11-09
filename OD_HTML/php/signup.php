@@ -13,9 +13,17 @@ $password=$_POST['supassword'];
 $sql="INSERT INTO user(email, password) VALUES ('$email', '$password')";
 $result=mysqli_query($con, $sql);
 if($result){
-echo "You have been signed up!";
+    echo 'Thanks for signing up! Login below.';
+        
+    echo '<script type="text/javascript">'
+   , 'hideSignup();'
+   , '</script>'
+   
+    
+;
 }
 }
+
 
 /*
     $servername = "localhost";
