@@ -2,6 +2,14 @@
 
 @font-face { font-family: Ubuntu; font-weight: medium; src: url('../fonts/ubuntu/Ubuntu-M.ttf');}
 
+/*-------back button--------*/
+
+.bbtn {
+    position: absolute !important;
+    left: 15px !important;
+    top: 10px !important;
+}
+
 /*-------LOGO--------*/
 
 .bgimg {
