@@ -57,6 +57,17 @@
     margin-left: 3%;
 }
 
+.comp {
+    float: right;
+    margin: 0px;
+}
+
+.compB {
+    width: 90%;
+    margin: 3% auto;
+    
+};
+
 .dueDiv {
     /*word-wrap: break-word;*/
     display: block;

@@ -68,7 +68,7 @@ body {
     display: inherit;
     height:90%;
     width: 90%;  
-    margin: 2.5%;
+    margin: 2.5% 2.5% 2.5% -.4%;
 }
 
 .smlB {
