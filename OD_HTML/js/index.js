@@ -1,4 +1,6 @@
-
+window.onload = function(){
+    document.getElementById("bBtn").style.visibility = "hidden";
+};
 
 
 function hideSignup(){

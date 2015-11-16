@@ -66,7 +66,7 @@
     width: 90%;
     margin: 3% auto;
     
-};
+}
 
 .dueDiv {
     /*word-wrap: break-word;*/
@@ -82,3 +82,8 @@
     color: #95bcb8;
 }
 
+
+.proBar {
+    width: 100%;
+    margin: -16px -5px 10px -5px;
+}
