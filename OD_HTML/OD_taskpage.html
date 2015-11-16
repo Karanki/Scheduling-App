@@ -19,8 +19,19 @@
     
     <div id="hBanner" class="bnnr">
         <div id="" class="col-xs-3 bnnrEl">
-            <div id="tDaBtn" class="btn btn-default elBtns">
-                <img src="./images/Button_BACK_45X45.png" class="lrgB" height="40" width="40"/>
+            <div id="tDaBtn" class="btn btn-default elBtns" data-toggle="collapse" data-target="#menu">
+                <img src="./images/Button_CHECK_45x45.png" class="lrgB" height="40" width="40"/>
+                    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse dropMenuBg" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li id="" class="navEl">About</a></li>
+                        <li id="achive" class="navEl">Folders</li>
+                        <li id="achive" class="navEl">Achievements</li>
+                        <hr>
+                        <li id="logOut" class="navEl">Logout</li>                        
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -36,9 +47,19 @@
     </div>
     
     <div id="fldrBox" class="container-fluid mainBox"> 
-        <div id="fldrRow" class="row mainCont">
-            
-            
+          
+            <div id="introSec" class="col-xs-6 infoBox">
+                <span>Click</span>
+                </br>
+                <img src="./images/Button_ADD_45x45.png" class="elBtns">
+            </br>
+                <span>for a new</span>
+            </br>
+                <span>TASK</span>
+            </div>
+
+        
+        <div id="fldrRow" class="row mainCont">            
             <div id="tsk" class="col-xs-12 tskEl" style="display:none;">
                 <input id="" class="tskInput" type="text" name="TaskName" placeholder="Enter Task Name">
 
