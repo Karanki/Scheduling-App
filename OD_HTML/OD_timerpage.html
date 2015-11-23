@@ -31,34 +31,30 @@
     </div>
     
     <div class="container-fluid mainBox">
-        <div id="timerContent" class="row mainCont">
-            <div id="strtDate" class="row col-xs-12 catCont">
-                <span>TASK START DATE</span>
-                
-                <p>This is a paragraph that describes how to set the time for each task.</p>
-            </div>
-            
-            
-            
+        <div id="timerContent" class="row mainCont1">
+            <form id="task" method="post" action="php/task.php">
+                <div id="strtDate" class="row col-xs-12 catCont">
+                    <span class="headers"><strong>TASK NAME</strong></span>
+                    <input class="tskInput1" placeholder="tskName"></input>        
 
-            <div id="endDate" class="row col-xs-12 catCont">
-                <span>TASK END DATE</span>
-                <div id="strtCalCon" class="row col-xs-12 center-block">
-                   <input type="text" id="datepicker">     
+                    <p>Start your task timer by taping play on the task bar option bar.</p>
                 </div>
-            </div>
-            <div id="endCalCon" class="row col-xs-12 center-block">
-                <iframe id="endCal" class="center-block iFramStyle"></iframe>
-            </div>
 
-            <div id="endTime" class="row col-xs-12 catCont">
-                <span>TASK END TIME</span>
-                
-            </div>
-            <div class="btnCont center-block">
-                <button id="timerDone" class="btn btn-primary center-block btnCont">DONE</button>
-            </div>
-        </div>    
+
+                <div id="endDate" class="row col-xs-12 catCont">
+                    <span class="headers"><strong>TASK END DATE</strong></span>
+                    <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                        <input size="16" type="text" value="" readonly class="tskInput1">
+                        <span class="add-on"><i class="icon-remove"></i></span>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="" /><br/>
+                </div>
+            </form>
+        
+        <div class="btnCont center-block">
+            <button id="timerDone" class="btn btn-primary center-block btnCont">DONE</button>
+        </div>
     </div>
     
 
