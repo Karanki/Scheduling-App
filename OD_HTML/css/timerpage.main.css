@@ -13,6 +13,7 @@
 .catCont {
     display: block;
     margin: auto;
+    margin-bottom: 4px;
     padding: 5px 10px 2.5px 10px;
     vertical-align: middle;
     border-bottom: 2px solid rgba(0,0,0,.1);
@@ -45,4 +46,23 @@
 .mBtns {
     width: 90%;
     height: 45px;
+}
+
+.headers {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.tskInput1 {
+    width: 66%;
+    margin: 5px 15px;
+    margin-right: 3%;
+    border-right: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom-color: rgba(106, 145, 145, .5);
+    color: #6a9191;
+    background-color: rgba(255, 255, 255, 0);
+    font-style: normal;
+    font-size: 1.2em;
 }
